@@ -10,8 +10,10 @@
 
 //1
 var numero;
-for(var i = 1; i < 100; i++) {
+for(var i = 1; i < 101; i++) {
     numero = i;
+
+    //2
     if( (numero % 3 === 0) && (numero % 5 === 0)) {
         numero = "FizzBuzz";
     } else if(numero % 3 === 0) {
@@ -19,5 +21,7 @@ for(var i = 1; i < 100; i++) {
     } else if(numero % 5 === 0) {
         numero = "Buzz";
     }
+
+    //3
     console.log(numero);
 }
